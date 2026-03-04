@@ -1,0 +1,35 @@
+{
+  "workflow_name": "voice_agent_call_flow",
+
+  "steps": [
+    {
+      "step": "greeting",
+      "description": "Agent greets caller and asks how it can help"
+    },
+
+    {
+      "step": "collect_information",
+      "description": "Collect caller name phone number and service request"
+    },
+
+    {
+      "step": "determine_emergency",
+      "description": "Check if the request is an emergency based on defined triggers"
+    },
+
+    {
+      "step": "emergency_routing",
+      "description": "If emergency attempt transfer to on-call technician"
+    },
+
+    {
+      "step": "non_emergency_handling",
+      "description": "Log request and inform caller that a technician will follow up"
+    },
+
+    {
+      "step": "fallback",
+      "description": "If transfer fails collect details and schedule callback"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "account_id": "demo_bens_electric",
+    "version_update": "v1_to_v2",
+    "changes": [
+        {
+            "field": "contact_emails",
+            "change_type": "added",
+            "values": [
+                "info@benselectricsolutionsteam.com",
+                "gm_pressurewash@yahoo.ca"
+            ]
+        },
+        {
+            "field": "contact_phone_numbers",
+            "change_type": "added",
+            "values": [
+                "403-870-8494"
+            ]
+        },
+        {
+            "field": "staff_members",
+            "change_type": "added",
+            "values": [
+                "Shelley Manley"
+            ]
+        }
+    ],
+    "source": "onboarding_call_chat",
+    "notes": "Updates extracted from onboarding call chat transcript."
+}
