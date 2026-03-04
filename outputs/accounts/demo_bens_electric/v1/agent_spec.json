@@ -6,17 +6,17 @@
         "company_name": "my team to have like a one",
         "services_supported": [
             "electrical",
-            "residential",
-            "projects",
-            "service call",
-            "commercial",
             "maintenance",
+            "residential",
+            "service call",
             "installation",
-            "troubleshooting"
+            "projects",
+            "troubleshooting",
+            "commercial"
         ],
         "emergency_triggers": [
-            "emergency",
-            "after hours"
+            "after hours",
+            "emergency"
         ],
         "business_hours": "unknown"
     },
