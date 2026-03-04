@@ -9,18 +9,18 @@
     },
     "office_address": "",
     "services_supported": [
-        "installation",
+        "electrical",
         "residential",
         "projects",
-        "maintenance",
         "service call",
-        "troubleshooting",
-        "electrical",
-        "commercial"
+        "commercial",
+        "maintenance",
+        "installation",
+        "troubleshooting"
     ],
     "emergency_definition": [
-        "after hours",
-        "emergency"
+        "emergency",
+        "after hours"
     ],
     "emergency_routing_rules": {
         "primary_contact": "",
@@ -34,9 +34,9 @@
         "failure_message": ""
     },
     "integration_constraints": [
-        "jobber",
         "quickbooks",
-        "crm"
+        "crm",
+        "jobber"
     ],
     "after_hours_flow_summary": "",
     "office_hours_flow_summary": "",
