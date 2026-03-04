@@ -5,18 +5,18 @@
     "key_variables": {
         "company_name": "my team to have like a one",
         "services_supported": [
-            "service call",
-            "commercial",
-            "troubleshooting",
-            "projects",
-            "residential",
-            "installation",
             "maintenance",
-            "electrical"
+            "troubleshooting",
+            "residential",
+            "commercial",
+            "installation",
+            "service call",
+            "electrical",
+            "projects"
         ],
         "emergency_triggers": [
-            "after hours",
-            "emergency"
+            "emergency",
+            "after hours"
         ],
         "business_hours": "unknown"
     },

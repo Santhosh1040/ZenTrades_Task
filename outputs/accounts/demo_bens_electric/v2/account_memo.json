@@ -9,18 +9,18 @@
     },
     "office_address": "",
     "services_supported": [
-        "service call",
-        "commercial",
-        "troubleshooting",
-        "projects",
-        "residential",
-        "installation",
         "maintenance",
-        "electrical"
+        "troubleshooting",
+        "residential",
+        "commercial",
+        "installation",
+        "service call",
+        "electrical",
+        "projects"
     ],
     "emergency_definition": [
-        "after hours",
-        "emergency"
+        "emergency",
+        "after hours"
     ],
     "emergency_routing_rules": {
         "primary_contact": "",
@@ -34,9 +34,9 @@
         "failure_message": ""
     },
     "integration_constraints": [
+        "jobber",
         "quickbooks",
-        "crm",
-        "jobber"
+        "crm"
     ],
     "after_hours_flow_summary": "",
     "office_hours_flow_summary": "",
@@ -45,8 +45,8 @@
     ],
     "notes": {
         "contact_emails": [
-            "info@benselectricsolutionsteam.com",
-            "gm_pressurewash@yahoo.ca"
+            "gm_pressurewash@yahoo.ca",
+            "info@benselectricsolutionsteam.com"
         ],
         "contact_phones": [
             "403-870-8494"
