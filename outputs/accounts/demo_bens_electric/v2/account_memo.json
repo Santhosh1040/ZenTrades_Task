@@ -9,18 +9,18 @@
     },
     "office_address": "",
     "services_supported": [
-        "electrical",
-        "maintenance",
-        "residential",
         "service call",
+        "electrical",
+        "commercial",
+        "troubleshooting",
+        "maintenance",
         "installation",
         "projects",
-        "troubleshooting",
-        "commercial"
+        "residential"
     ],
     "emergency_definition": [
-        "after hours",
-        "emergency"
+        "emergency",
+        "after hours"
     ],
     "emergency_routing_rules": {
         "primary_contact": "",
@@ -34,9 +34,9 @@
         "failure_message": ""
     },
     "integration_constraints": [
+        "jobber",
         "crm",
-        "quickbooks",
-        "jobber"
+        "quickbooks"
     ],
     "after_hours_flow_summary": "",
     "office_hours_flow_summary": "",
@@ -45,15 +45,15 @@
     ],
     "notes": {
         "contact_emails": [
-            "gm_pressurewash@yahoo.ca",
-            "info@benselectricsolutionsteam.com"
+            "info@benselectricsolutionsteam.com",
+            "gm_pressurewash@yahoo.ca"
         ],
         "contact_phones": [
             "403-870-8494"
         ],
         "staff_names": [
-            "Shelley Manley",
-            "G&M Pressure washing"
+            "G&M Pressure washing",
+            "Shelley Manley"
         ]
     }
 }
