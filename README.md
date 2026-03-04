@@ -76,9 +76,42 @@ ZenTrades_Task
 
 ---
 
+## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone <repo_url>
+cd ZenTrades_Task
+```
+
+### 2. Install dependencies
+
+```bash
+pip install jsonschema
+```
+
+Python 3.9+ recommended.
+
+### 3. Add transcripts
+
+Place demo transcripts in:
+
+```
+input/demo_calls/
+```
+
+Place onboarding transcripts in:
+
+```
+input/onboarding_calls/
+```
+
+---
+
 ## Running the Pipeline
 
-Run the full system with:
+Run the pipeline using:
 
 ```bash
 python scripts/run_pipeline.py
@@ -86,10 +119,10 @@ python scripts/run_pipeline.py
 
 The pipeline will automatically:
 
-1. Extract demo data  
-2. Generate v1 configuration  
-3. Apply onboarding updates  
-4. Generate v2 configuration  
+1. Extract demo information
+2. Generate v1 configuration
+3. Apply onboarding updates
+4. Generate v2 configuration
 5. Produce changelog
 
 ---
@@ -114,7 +147,7 @@ v2/
 
 ## Prompt Behavior
 
-The generated agent prompt includes:
+The generated agent prompt includes structured handling for:
 
 ### Business Hours Flow
 
@@ -125,7 +158,7 @@ The generated agent prompt includes:
 - route or transfer call
 - fallback if transfer fails
 - confirm next steps
-- close the call
+- close call
 
 ### After Hours Flow
 
@@ -143,7 +176,7 @@ The generated agent prompt includes:
 
 The system avoids hallucinating information.
 
-Missing information is tracked in:
+If information is missing, it is recorded under:
 
 ```
 questions_or_unknowns
@@ -151,30 +184,18 @@ questions_or_unknowns
 
 ---
 
-## Requirements
-
-Python 3.9+
-
-Install dependency:
-
-```bash
-pip install jsonschema
-```
-
----
-
 ## Limitations
 
-This implementation uses rule-based extraction rather than an LLM, which limits understanding of complex conversations.
+This implementation uses rule-based extraction rather than an LLM, which may miss complex conversational signals.
 
 ---
 
 ## Future Improvements
 
-With production access the system could include:
+With production access this system could include:
 
 - LLM-based extraction
-- automatic audio transcription
+- automatic speech transcription
 - CRM integrations
-- monitoring dashboard
-- automated prompt testing
+- monitoring dashboards
+- automated prompt evaluation
