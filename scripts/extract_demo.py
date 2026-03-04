@@ -117,10 +117,7 @@ def extract_integrations(text):
 # -------------------------
 def generate_account_id(company_name, filename):
 
-    if company_name:
-        return company_name.lower().replace(" ", "_")
-
-    # fallback to filename (cleaned)
+    # Always use filename for stable account_id
     return Path(filename).stem.lower().replace(" ", "_")
 
 
@@ -189,5 +186,5 @@ if __name__ == "__main__":
 
     demo_folder = Path("../input/demo_calls")
 
-for file in demo_folder.glob("*.txt"):
-    process_demo_file(file)
+    for file in demo_folder.glob("*.txt"):
+        process_demo_file(file)
