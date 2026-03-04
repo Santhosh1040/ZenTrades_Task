@@ -119,11 +119,11 @@ python scripts/run_pipeline.py
 
 The pipeline will automatically:
 
-1. Extract demo information
-2. Generate v1 configuration
-3. Apply onboarding updates
-4. Generate v2 configuration
-5. Produce changelog
+1. Extract demo information  
+2. Generate v1 configuration  
+3. Apply onboarding updates  
+4. Generate v2 configuration  
+5. Produce changelog  
 
 ---
 
@@ -147,28 +147,28 @@ v2/
 
 ## Prompt Behavior
 
-The generated agent prompt includes structured handling for:
+The generated agent prompt includes structured handling for calls.
 
 ### Business Hours Flow
 
-- greet caller
-- ask purpose
-- collect name and phone number
-- detect emergency vs non-emergency
-- route or transfer call
-- fallback if transfer fails
-- confirm next steps
-- close call
+- greet caller  
+- ask purpose  
+- collect name and phone number  
+- detect emergency vs non-emergency  
+- route or transfer call  
+- fallback if transfer fails  
+- confirm next steps  
+- close call  
 
 ### After Hours Flow
 
-- greet caller
-- confirm emergency
-- collect name, phone, address
-- attempt technician transfer
-- fallback if transfer fails
-- log request for follow-up
-- close call politely
+- greet caller  
+- confirm emergency  
+- collect name, phone, address  
+- attempt technician transfer  
+- fallback if transfer fails  
+- log request for follow-up  
+- close call politely  
 
 ---
 
@@ -186,16 +186,17 @@ questions_or_unknowns
 
 ## Limitations
 
-This implementation uses rule-based extraction to keep the pipeline zero-cost and reproducible. 
+This implementation uses rule-based extraction to keep the pipeline zero-cost and reproducible.  
 More advanced NLP or LLM-based extraction could improve accuracy in production environments.
+
 ---
 
 ## Future Improvements
 
 With production access this system could include:
 
-- LLM-based extraction
-- automatic speech transcription
-- CRM integrations
-- monitoring dashboards
-- automated prompt evaluation
+- LLM-based extraction  
+- automatic speech transcription  
+- CRM integrations  
+- monitoring dashboards  
+- automated prompt evaluation  
