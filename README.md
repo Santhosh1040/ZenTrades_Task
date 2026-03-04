@@ -186,8 +186,8 @@ questions_or_unknowns
 
 ## Limitations
 
-This implementation uses rule-based extraction rather than an LLM, which may miss complex conversational signals.
-
+This implementation uses rule-based extraction to keep the pipeline zero-cost and reproducible. 
+More advanced NLP or LLM-based extraction could improve accuracy in production environments.
 ---
 
 ## Future Improvements
